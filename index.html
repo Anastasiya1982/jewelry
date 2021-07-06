@@ -10,11 +10,38 @@
 <body>
 <div class="preview-section">
     <div class="wrapper">
-        <header>
-            <div class="menu"></div>
-            <div class="logo"></div>
-            <div class="search-section"></div>
+        <header class="header">
+            <div class="burger">
+                <span></span>
+            </div>
+            <ul class="menu">
+                <li class="menu__item menu__item_active" >
+                    <a class="menu__link" href="#">Контрагентам</a>
+                </li>
+                <li   class="menu__item" >
+                    <a class="menu__link" href="#">Дизайнерам</a>
+                </li>
+                <li  class="menu__item"  >
+                    <a class="menu__link" href="#">Вакансии</a>
+                </li>
+            </ul>
+            <div class="header__logo">
+                <img src="./assets/img/logo.png" alt="logo" class="header__logo-img">
+            </div>
+            <div class="header__registration-block">
+                <div class="search-section" method="get">
+                   <img src="./assets/img/search-Vector.png">
+                   <input name='search' placeholder="Поиск" class="search-section__input">
+                </div>
+                <button class="logIn-btn">Вход/Регистрация</button>
+                <div class="user-item"></div>
+                <div class="like-item"></div>
+            </div>
         </header>
+        <div class="preview-content">
+            <h1 class="preview-content__title">Долго, дорого, богато!</h1>
+            <button>каталог изделий </button>
+        </div>
     </div>
 </div>
 

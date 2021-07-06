@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="39ce5454-3460-4659-b4a3-af1651b6ca74" name="Default Changelist" comment="" />
+    <list default="true" id="39ce5454-3460-4659-b4a3-af1651b6ca74" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style.scss" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,7 +34,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../flowers/index.html" />
+    <property name="last_opened_file_path" value="D:/JS/online-zoo" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -49,7 +55,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1625559813733</updated>
-      <workItem from="1625559814936" duration="3153000" />
+      <workItem from="1625559814936" duration="18862000" />
     </task>
     <servers />
   </component>
@@ -57,14 +63,18 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="662" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1625567800181">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="662" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1625567800181" />
     <state x="741" y="191" key="EditFileWatcherDialog" timestamp="1625562895742">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="741" y="191" key="EditFileWatcherDialog/0.0.1536.824@0.0.1536.824" timestamp="1625562895742" />
-    <state x="721" y="167" key="FileChooserDialogImpl" timestamp="1625563588125">
+    <state x="721" y="167" key="FileChooserDialogImpl" timestamp="1625564047756">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="721" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1625563588125" />
+    <state x="721" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1625564047756" />
     <state x="555" y="55" key="SettingsEditor" timestamp="1625563125473">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

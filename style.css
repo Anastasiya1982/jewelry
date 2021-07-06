@@ -1,6 +1,139 @@
+@font-face {
+  font-family: "Gilroy Light";
+  src: url("./fonts/Gilroy-Light.eot?#iefix") format("embedded-opentype"), url("./fonts/Gilroy-Light.woff2") format("woff2"), url("./fonts/Gilroy-Light.woff") format("woff"), url("./fonts/Gilroy-Light.svg#Gilroy-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-00FE;
+}
+@font-face {
+  font-family: "Gilroy ExtraBold";
+  src: url("./fonts/Gilroy-ExtraBold.eot");
+  src: url("./fonts/Gilroy-ExtraBold.eot?#iefix") format("embedded-opentype"), url("./fonts/Gilroy-ExtraBold.woff2") format("woff2"), url("./fonts/Gilroy-ExtraBold.woff") format("woff"), url("./fonts/Gilroy-ExtraBold.svg#Gilroy-ExtraBold") format("svg");
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-00FE;
+}
+@font-face {
+  font-family: "Noto Serif";
+  src: url("./fonts/Noto Serif.eot");
+  src: url("./fonts/Noto Serif.eot?#iefix") format("embedded-opentype"), url("./fonts/Noto Serif.woff2") format("woff2"), url("./fonts/Noto Serif.woff") format("woff"), url("./fonts/Noto Serif.svg#Noto Serif") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2074;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Serif", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: normal;
+  color: #000;
+}
+
+h1, h2, h3, h4, p, ul, li, a {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.preview-section {
+  width: 100%;
+  min-height: 950px;
+  background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.57), rgba(51, 51, 51, 0.17)), url("./assets/img/bgc-preview-section.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 25px;
+}
+
+.wrapper {
+  max-width: 1110px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.burger {
+  display: none;
+}
+
+.header {
+  width: 100%;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .menu {
+  width: 100%;
+  max-width: 321px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .menu__item .menu__link {
+  color: #FFFFFF;
+  font-size: 15px;
+  line-height: 21px;
+  font-family: "Gilroy";
+  letter-spacing: 1px;
+}
+.header .menu__item .menu__link:hover {
+  color: #BEC7CE;
+  text-shadow: 3px 5px 5px rgba(7, 7, 7, 0.75);
+}
+.header .menu__item_active .menu__link {
+  -webkit-text-stroke: 0.5px black;
+  text-shadow: 3px 5px 5px rgba(7, 7, 7, 0.75);
+}
+.header__logo {
+  max-width: 216px;
+}
+.header__logo .header__logo-img {
+  width: 100%;
+  object-fit: contain;
+}
+.header__registration-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 35%;
+}
+.header__registration-block .search-section {
+  width: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__registration-block .search-section__input {
+  width: 100%;
+  height: 42px;
+  padding-left: 10px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.header__registration-block .search-section__input::-webkit-input-placeholder {
+  color: #FFFFFF;
+}
+.header__registration-block .search-section .logIn-btn {
+  width: 123px;
+  text-align: center;
+  border: none;
+}
+.header__registration-block .search-section .logIn-btn:focus {
+  border: none;
 }
 
 /*# sourceMappingURL=style.css.map */
