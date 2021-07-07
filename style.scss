@@ -616,6 +616,9 @@ h1, h2, h3, h4, p, ul, li, a {
   flex-wrap: wrap;
   justify-content: space-around;
   margin-bottom: 150px;
+  @include for-tablet-portrait-up{
+   margin-bottom: 30px;
+  }
   &__item {
    flex: 1 1 calc(33.33% - 30px);
    max-width: 350px;
@@ -656,5 +659,61 @@ h1, h2, h3, h4, p, ul, li, a {
   }
  }
 
+ /*advices-section*/
+.advices-section{
+ width: 100%;
+ height: auto;
+ background-color: $colorBlack;
+}
+.advice-content{
+ padding-top: 100px;
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ color: $colorWhite;
+ @include  for-tablet-portrait-up{
+  padding-top: 50px;
+ }
+ &__previw{
+  margin-bottom: 20px;
+  font-family: $fontGilroy;
+  font-size: 21px;
+  line-height: 29px;
+ }
+ &__title{
+  @include h3MainStyles();
+  margin-bottom: 45px;
+  @include for-phone-only{
+   text-align: center;
+  }
+ }
+ &__info {
+  max-width: 50%;
+  text-align: center;
+  font-family: $fontGilroy;
+  font-weight: inherit;
+  font-size: 18px;
+  line-height: 25px;
+ }
+ &__search-salons{
+  width: 224px;
+  height: 51px;
+  border: 1px solid #333333;
+  background-color: $colorWhite;
+  font-family: $fontGilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 60px auto 100px;
+  cursor: pointer;
+  &:hover{
+   background-color: #B6B6B6;
+  }
+ }
+}
 
 

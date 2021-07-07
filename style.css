@@ -675,6 +675,11 @@ h1, h2, h3, h4, p, ul, li, a {
   justify-content: space-around;
   margin-bottom: 150px;
 }
+@media (max-width: 600px) {
+  .goods-categories {
+    margin-bottom: 30px;
+  }
+}
 .goods-categories__item {
   flex: 1 1 calc(33.33% - 30px);
   max-width: 350px;
@@ -712,6 +717,72 @@ h1, h2, h3, h4, p, ul, li, a {
   right: 0;
   z-index: 2;
   background: linear-gradient(180deg, rgba(180, 180, 180, 0) 20.31%, #333333 100%);
+}
+
+/*advices-section*/
+.advices-section {
+  width: 100%;
+  height: auto;
+  background-color: #343434;
+}
+
+.advice-content {
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #FFFFFF;
+}
+@media (max-width: 600px) {
+  .advice-content {
+    padding-top: 50px;
+  }
+}
+.advice-content__previw {
+  margin-bottom: 20px;
+  font-family: "Gilroy Light";
+  font-size: 21px;
+  line-height: 29px;
+}
+.advice-content__title {
+  font-family: Noto Serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 41px;
+  margin-bottom: 45px;
+}
+@media (max-width: 485px) {
+  .advice-content__title {
+    text-align: center;
+  }
+}
+.advice-content__info {
+  max-width: 50%;
+  text-align: center;
+  font-family: "Gilroy Light";
+  font-weight: inherit;
+  font-size: 18px;
+  line-height: 25px;
+}
+.advice-content__search-salons {
+  width: 224px;
+  height: 51px;
+  border: 1px solid #333333;
+  background-color: #FFFFFF;
+  font-family: "Gilroy Light";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 60px auto 100px;
+  cursor: pointer;
+}
+.advice-content__search-salons:hover {
+  background-color: #B6B6B6;
 }
 
 /*# sourceMappingURL=style.css.map */
