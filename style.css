@@ -38,7 +38,7 @@ body {
   font-size: 16px;
   line-height: 21px;
   font-weight: normal;
-  color: #000;
+  color: #343434;
 }
 
 h1, h2, h3, h4, p, ul, li, a {
@@ -65,12 +65,17 @@ h1, h2, h3, h4, p, ul, li, a {
 }
 @media (max-width: 1200px) {
   .wrapper {
-    max-width: 940px;
+    max-width: 900px;
   }
 }
 @media (max-width: 980px) {
   .wrapper {
-    max-width: 760px;
+    max-width: 768px;
+  }
+}
+@media (max-width: 812px) {
+  .wrapper {
+    max-width: 620px;
   }
 }
 @media (max-width: 600px) {
@@ -97,7 +102,21 @@ h1, h2, h3, h4, p, ul, li, a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /*480px*/
+}
+@media (max-width: 1200px) {
+  .header .menu {
+    max-width: 300px;
+  }
+}
+@media (max-width: 980px) {
+  .header .menu {
+    max-width: 275px;
+  }
+}
+@media (max-width: 812px) {
+  .header .menu {
+    max-width: 200px;
+  }
 }
 @media (max-width: 600px) {
   .header .menu {
@@ -114,12 +133,27 @@ h1, h2, h3, h4, p, ul, li, a {
     height: 212px;
   }
 }
+@media (max-width: 812px) {
+  .header .menu__item:last-child {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .header .menu__item:last-child {
+    display: block;
+  }
+}
 .header .menu__item .menu__link {
   color: #FFFFFF;
   font-size: 15px;
   line-height: 21px;
   font-family: "Gilroy";
   letter-spacing: 1px;
+}
+@media (max-width: 980px) {
+  .header .menu__item .menu__link {
+    font-size: 12px;
+  }
 }
 .header .menu__item .menu__link:hover {
   color: #BEC7CE;
@@ -131,6 +165,7 @@ h1, h2, h3, h4, p, ul, li, a {
 }
 .header__logo {
   max-width: 216px;
+  margin: 0 20px;
 }
 @media (max-width: 600px) {
   .header__logo {
@@ -159,6 +194,14 @@ h1, h2, h3, h4, p, ul, li, a {
   color: #FFFFFF;
   border: none;
   cursor: pointer;
+}
+.header__registration-block .logIn-btn:hover {
+  background-color: #333333;
+  border: 1px solid #FFFFFF;
+  border-radius: 3px;
+}
+.header__registration-block .logIn-btn:hover:focus {
+  border: none;
 }
 .header__registration-block .search-section {
   width: 78px;
@@ -208,20 +251,25 @@ h1, h2, h3, h4, p, ul, li, a {
 .header__registration-block .search-section__input:focus::-webkit-input-placeholder {
   color: transparent;
 }
-.header__registration-block .search-section .logIn-btn {
-  width: 123px;
-  text-align: center;
-  border: none;
+.header__registration-block .user-item {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
 }
-.header__registration-block .search-section .logIn-btn:focus {
-  border: none;
-  /*TODO check hover*/
+@media (max-width: 812px) {
+  .header__registration-block .user-item {
+    display: none;
+  }
 }
-.header__registration-block .user-item,
 .header__registration-block .like-item {
   width: 16px;
   height: 16px;
   cursor: pointer;
+}
+@media (max-width: 980px) {
+  .header__registration-block .like-item {
+    display: none;
+  }
 }
 
 .burger {

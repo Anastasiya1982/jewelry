@@ -2,6 +2,7 @@
 $fontNoto-Serif:'Noto Serif';
 $colorWhite: #FFFFFF;
 $colorBlack: #343434;
+$colorForHoverBtn:#333333;
 $mobile:375px;
 $tablet:768px;
 
@@ -26,6 +27,9 @@ $tablet:768px;
 }
 @mixin for-tablet-portrait-up {
  @media (max-width: 600px) { @content; }
+}
+@mixin for-tablet-standart-up {
+ @media (max-width:812px) { @content; }
 }
 @mixin for-tablet-landscape-up {
  @media (max-width: 980px) { @content; }
@@ -52,7 +56,7 @@ body {
  font-size: 16px;
  line-height: 21px;
  font-weight: normal;
- color: #000;
+ color: $colorBlack;
 }
 h1, h2, h3, h4, p, ul, li, a {
  padding: 0;
@@ -75,10 +79,13 @@ h1, h2, h3, h4, p, ul, li, a {
  width: 100%;
  margin: 0 auto;
  @include for-desktop-up{
-  max-width: 940px;
+  max-width: 900px;
  }
  @include for-tablet-landscape-up{
-  max-width: 760px;
+  max-width: 768px;
+ }
+ @include for-tablet-standart-up{
+  max-width: 620px;
  }
  @include  for-tablet-portrait-up{
   max-width: 570px;
@@ -104,7 +111,17 @@ h1, h2, h3, h4, p, ul, li, a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /*480px*/
+  @include for-desktop-up{
+   max-width: 300px;
+  }
+  @include for-tablet-landscape-up{
+   max-width: 275px;
+  }
+  @include  for-tablet-standart-up{
+     max-width: 200px;
+  }
+
+
   @include for-tablet-portrait-up{
   width: 480px;
   flex-direction: column;
@@ -121,12 +138,24 @@ h1, h2, h3, h4, p, ul, li, a {
  }
 
  .menu__item {
+  &:last-child{
+   @include for-tablet-standart-up {
+    display: none;
+   }
+   @include for-tablet-portrait-up{
+    display: block;
+   }
+  }
   .menu__link {
    color: $colorWhite;
    font-size: 15px;
    line-height: 21px;
    font-family: 'Gilroy';
    letter-spacing: 1px;
+   @include for-tablet-landscape-up{
+    font-size: 12px;
+
+   }
 
    &:hover {
     color: #BEC7CE;
@@ -144,6 +173,7 @@ h1, h2, h3, h4, p, ul, li, a {
 
  &__logo {
   max-width: 216px;
+  margin: 0 20px;
   @include  for-tablet-portrait-up{
    margin-left: 30px;
   }
@@ -161,14 +191,23 @@ h1, h2, h3, h4, p, ul, li, a {
   @include for-tablet-portrait-up{
    display: none;
   }
-    .logIn-btn{
+    .logIn-btn {
      max-width: 130px;
      height: 52px;
      background-color: transparent;
      color: $colorWhite;
      border: none;
      cursor: pointer;
-   }
+
+     &:hover {
+      background-color: $colorForHoverBtn;
+      border: 1px solid $colorWhite;
+      border-radius: 3px;
+     &:focus {
+       border: none;
+      }
+     }
+    }
  .search-section {
   width: 78px;
   display: flex;
@@ -193,21 +232,23 @@ h1, h2, h3, h4, p, ul, li, a {
     outline: none;
    }
   }
-  .logIn-btn {
-   width: 123px;
-   text-align: center;
-   border: none;
-   &:focus {
-    border: none;
-    /*TODO check hover*/
+  }
+
+  .user-item{
+   width: 16px;
+   height: 16px;
+   cursor: pointer;
+   @include for-tablet-standart-up{
+    display: none;
    }
   }
- }
-  .user-item,
   .like-item{
    width: 16px;
    height: 16px;
    cursor: pointer;
+   @include for-tablet-landscape-up{
+    display: none;
+   }
   }
  }
 }
