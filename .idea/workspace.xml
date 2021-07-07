@@ -35,7 +35,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/JS/online-zoo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -58,7 +58,8 @@
       <updated>1625559813733</updated>
       <workItem from="1625559814936" duration="19156000" />
       <workItem from="1625585166452" duration="15603000" />
-      <workItem from="1625637313399" duration="28237000" />
+      <workItem from="1625637313399" duration="28497000" />
+      <workItem from="1625672420576" duration="8598000" />
     </task>
     <servers />
   </component>
