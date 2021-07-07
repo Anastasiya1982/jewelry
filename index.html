@@ -10,10 +10,10 @@
 <body>
 <div class="preview-section">
     <div class="wrapper">
+        <div class="burger">
+            <span class="burger__item"></span>
+        </div>
         <header class="header">
-            <div class="burger">
-                <span class="burger__item"></span>
-            </div>
             <ul class="menu">
                 <li class="menu__item menu__item_active" >
                     <a class="menu__link" href="#">Контрагентам</a>
@@ -34,19 +34,31 @@
                    <input name='search' placeholder="Поиск" class="search-section__input">
                 </div>
                 <button class="logIn-btn">Вход/Регистрация</button>
+                <div class="header__icons">
                 <div class="user-item">
-                    <img src="./assets/img/user-vector.png" alt="user-item">
+                    <img src="./assets/img/user-vector.png" alt="user-item" class="user-item__img">
                 </div>
                 <div class="like-item">
-                    <img src="./assets/img/like-Vector.png">
+                    <img src="./assets/img/like-Vector.png" class="user-item__img" alt="like">
                 </div>
+                </div>
+            </div>
+            <div class="social-networks-logo">
+                <a class="social-networks-logo__item"  href="https://www.youtube.com"><img src="./assets/img/utube.png" alt="social-icons"></a>
+                <a class="social-networks-logo__item" href="https://vk.com"><img src="./assets/img/vk.png" alt="social-icons"></a>
+                <a class="social-networks-logo__item" href="https://opensource.fb.com"><img src="./assets/img/facebook.png" alt="social-icons"></a>
+                <a class="social-networks-logo__item" href="https://telegram.org/"><img src="./assets/img/telegramm.png" alt="social-icons"></a>
+                <a class="social-networks-logo__item" href="https://mail.ru/"><img src="./assets/img/email.png" alt="social-icons"></a>
             </div>
         </header>
         <div class="preview-content">
             <h2 class="preview-content__title">Долго, дорого, богато!</h2>
             <button class="preview-content__btn-catalog" >каталог изделий</button>
-            <span class="preview-content__separator"></span>
-            <ul class="preview-content__brands-list">
+        </div>
+    </div>
+    <div class="brands-section">
+        <div class="wrapper">
+            <ul class="brands-list">
                 <li class="brands-list__item">
                     <img class="brands-list__item-img"  src="./assets/img/brands-logo.png" alt="brand-logo">
                 </li>
@@ -65,13 +77,10 @@
                 <li class="brands-list__item">
                     <img class="brands-list__item-img" src="./assets/img/brands-logo.png">
                 </li>
-
             </ul>
-
         </div>
     </div>
 </div>
-
-
+<script src="./main.js"></script>
 </body>
 </html>
