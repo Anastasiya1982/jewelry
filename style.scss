@@ -20,6 +20,7 @@ $tablet:768px;
  font-weight: bold;
  font-size: 30px;
  line-height: 41px;
+ margin: 0 auto;
 }
 @mixin burger-span(){
  width: 100%;
@@ -53,6 +54,32 @@ $tablet:768px;
 }
 @mixin for-big-desktop-up {
  @media (max-width: 1920px) { @content; }
+}
+@mixin titleForCards{
+ position: absolute;
+ top: 75%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ text-align: center;
+ font-family: $fontGilroy;
+ font-weight: 500;
+ color: $colorWhite;
+ z-index: 3;
+}
+@mixin btnMainStyle{
+ width: 261px;
+ height: 51px;
+ background-color: #333333;
+ color: $colorWhite;
+ text-transform: uppercase;
+ border: 1px solid $colorWhite;
+ cursor: pointer;
+ @include for-tablet-portrait-up {
+  margin-bottom: 119px;
+ }
+ &:hover {
+  background-color: #252525;
+ }
 }
 
 
@@ -378,6 +405,9 @@ h1, h2, h3, h4, p, ul, li, a {
   z-index: 25;
   position: fixed;
  }
+ @include for-phone-only{
+
+ }
 
  &__item {
   @include burger-span();
@@ -439,19 +469,7 @@ h1, h2, h3, h4, p, ul, li, a {
  &__btn-catalog {
   margin: 50px 0 80px;
   width: 261px;
-  height: 51px;
-  background-color: #333333;
-  color: $colorWhite;
-  text-transform: uppercase;
-  border: 1px solid $colorWhite;
-  cursor: pointer;
-  @include for-tablet-portrait-up {
-   margin-bottom: 119px;
-  }
-
-  &:hover {
-   background-color: #252525;
-  }
+ @include btnMainStyle;
  }
 }
 
@@ -528,6 +546,7 @@ h1, h2, h3, h4, p, ul, li, a {
     font-weight: normal;
     font-size: 21px;
     line-height: 29px;
+    color: $colorBlack;
     &:hover{
      color: #3e6181;
     }
@@ -622,6 +641,7 @@ h1, h2, h3, h4, p, ul, li, a {
   flex-wrap: wrap;
   justify-content: space-around;
   margin-bottom: 150px;
+  align-items: center;
   @include for-tablet-portrait-up{
    margin-bottom: 30px;
   }
@@ -634,23 +654,21 @@ h1, h2, h3, h4, p, ul, li, a {
    margin-bottom: 30px;
    margin-right: 20px;
    position: relative;
+   @include for-phone-only{
+
+   }
      &:hover{
       box-shadow:  0 0 10px 4px rgba(0, 0, 0, .3);
      }
+
    .item-title {
-    position: absolute;
-    top: 75%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-family: $fontGilroy;
+   @include titleForCards;
     font-weight: 500;
     color: $colorWhite;
     font-size: 24px;
     line-height: 28px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    z-index: 3;
    }
    .item-picture:after {
     content: '';
@@ -677,20 +695,20 @@ h1, h2, h3, h4, p, ul, li, a {
  @include  for-tablet-portrait-up{
   padding-top: 50px;
  }
- &__previw{
+  &__previw{
   margin-bottom: 20px;
   font-family: $fontGilroy;
   font-size: 21px;
   line-height: 29px;
  }
- &__title{
+  &__title{
   @include h3MainStyles();
   margin-bottom: 45px;
   @include for-phone-only{
    text-align: center;
   }
  }
- &__info {
+  &__info {
   max-width: 50%;
   text-align: center;
   font-family: $fontGilroy;
@@ -698,7 +716,7 @@ h1, h2, h3, h4, p, ul, li, a {
   font-size: 18px;
   line-height: 25px;
  }
- &__search-salons{
+  &__search-salons{
   width: 224px;
   height: 51px;
   border: 1px solid #333333;
@@ -722,29 +740,44 @@ h1, h2, h3, h4, p, ul, li, a {
 .articles-content{
  @include containerFlex();
  font-family: fontGilroy;
- &__preview{
+  &__preview{
   margin-bottom: 15px;
   font-size: 21px;
   line-height: 29px;
  }
- &__title{
+  &__title{
   @include h3MainStyles;
   font-family:fontNoto-Serif;
   font-weight: 700;
   font-size: 30px;
+  text-align: center;
   line-height: 41px;
   -webkit-text-stroke:1px #000000;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin-bottom: 60px;
+  margin: 0  auto 60px;
+  @include for-phone-only{
+   font-size: 21px;
+  }
+
  }
  .articles{
   width: 100%;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
+  @include for-desktop-up{
+   justify-content: space-around;
+  }
     &__item{
      max-width: 350px;
      max-height: 370px;
+     position: relative;
+     margin-bottom: 30px;
+     @include for-phone-only{
+      max-width: 290px;
+      max-height: 310px;
+     }
      .article-picture{
       width: 100%;
       height: 100%;
@@ -753,12 +786,164 @@ h1, h2, h3, h4, p, ul, li, a {
        box-shadow:  0 0 10px 4px rgba(0, 0, 0, .3);
       }
      }
+     .item-title{
+      @include titleForCards;
+      width: 55%;
+      max-height: 87px;
+      font-family: fontGilroy;
+      font-size: 21px;
+      line-height:29px;
+      text-align: center;
+      @include for-phone-only{
+       font-size: 17px;
+      }
+     }
     }
  }
  &__read-blog{
   margin: 60px auto 120px;
+  width: 255px;
+ @include btnMainStyle;
  }
 }
 
+
+/*offers-and-contacts-form*/
+
+.offers-and-contacts-form{
+ width: 100%;
+ background-color: $colorBlack;
+}
+.proposal{
+ @include containerFlex();
+ color: $colorWhite;
+ &__preview{
+  font-family: fontGilroy;
+  font-size: 21px;
+  line-height: 29px;
+  text-align: center;
+  @include for-phone-only{
+   font-size: 12px;
+  }
+ }
+ &__title{
+  @include  h3MainStyles;
+  margin: 0 auto 75px;
+  @include for-phone-only{
+   font-size: 25px;
+   margin-bottom: 35px;
+  }
+ }
+ &__content{
+  margin: 0 auto 120px;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include for-tablet-standart-up{
+   flex-direction: column;
+  }
+ }
+}
+.proposal-categories{
+ display: flex;
+ align-items: flex-start;
+ flex-direction: column;
+ justify-content: space-around;
+ height: 113px;
+ @include for-tablet-standart-up{
+  flex-direction: row;
+  height: 80px;
+ }
+
+ &__item{
+  list-style: none;
+  background: url('./assets/img/subscribe__icon.png') no-repeat left 50%;
+  padding-left: 35px;
+  margin-bottom: 15px;
+  @include for-phone-only{
+   &:first-child{
+    display: none;
+   }
+  }
+  &-link{
+   color: $colorWhite;
+   font-family: Gilroy;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 25px;
+   &:hover{
+    color: #9a9a9a;
+   }
+   @include for-tablet-portrait-up{
+    font-size: 14px;
+   }
+  }
+ }
+}
+.contact-form{
+ max-width: 448px;
+ width: 100%;
+ height: 113px;
+ background-color: $colorWhite;
+ outline: 1px solid $colorWhite;
+ border: 14px solid $colorBlack;
+ outline: 1px solid $colorWhite;
+ margin-left: 15px;
+ @include for-tablet-portrait-up{
+  max-width: 340px;
+  border: 8px solid $colorBlack;
+ }
+ @include  for-phone-only{
+  max-width: 300px;
+  height: 100px;
+ }
+  &__form{
+   padding: 0 10px;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   width: 100%;
+   height: 100%;
+   &-input{
+    max-width: 200px;
+    width: 100%;
+    height: 45px;
+    border: 1px solid #D6D6D6;
+    padding-left: 5px;
+    @include input-placeholder{
+     text-align: center;
+    }
+    &:focus{
+     outline: none;
+    }
+    @include for-tablet-portrait-up{
+     max-width: 140px;
+     height: 35px;
+     font-size: 8px;
+    }
+    @include for-phone-only{
+     max-width: 120px;
+     height: 25px;
+    }
+   }
+   &-submit-btn{
+    @include btnMainStyle;
+    width: 160px;
+    height: 45px;
+    @include for-tablet-portrait-up{
+      margin-bottom: 0;
+      max-width: 140px;
+      height: 35px;
+      font-size: 8px;
+    }
+    @include for-phone-only{
+     max-width: 80px;
+     height: 25px;
+    }
+   }
+  }
+}
 
 
