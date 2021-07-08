@@ -702,8 +702,21 @@ a:hover {
   margin-right: 20px;
   position: relative;
 }
+@media (max-width: 485px) {
+  .goods-categories__item {
+    max-width: 290px;
+    margin-right: 0;
+    flex: auto;
+  }
+}
 .goods-categories__item:hover {
   box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 485px) {
+  .goods-categories__item .item-picture {
+    width: 100%;
+    height: 100%;
+  }
 }
 .goods-categories__item .item-title {
   position: absolute;
@@ -733,6 +746,7 @@ a:hover {
   background: linear-gradient(180deg, rgba(180, 180, 180, 0) 20.31%, #333333 100%);
 }
 
+/*presentation and video section*/
 /*advices-section*/
 .advices-section {
   width: 100%;
