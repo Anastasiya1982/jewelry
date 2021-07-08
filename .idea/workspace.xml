@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="39ce5454-3460-4659-b4a3-af1651b6ca74" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Gilroy-ExtraBold.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Gilroy-ExtraBold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Gilroy-Light.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Noto Serif.eot" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style.css.map" afterDir="false" />
@@ -70,7 +66,7 @@
       <workItem from="1625585166452" duration="15603000" />
       <workItem from="1625637313399" duration="28497000" />
       <workItem from="1625672420576" duration="15518000" />
-      <workItem from="1625723823705" duration="10497000" />
+      <workItem from="1625723823705" duration="19376000" />
     </task>
     <servers />
   </component>
