@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Gilroy';
+  src: local('Gilroy Regular'), local('Gilroy-Regular'),
+  url('./fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+  url('./fonts/Gilroy-Regular.woff2') format('woff2'),
+  url('./fonts/Gilroy-Regular.woff') format('woff'),
+  url('./fonts/Gilroy-Regular.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family:'Noto Serif';
+  src:url('./fonts/Noto Serif.woff') format('woff'),
+  url('./fonts/Noto Serif.svg#Noto Serif') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2074;
+}

@@ -1,6 +1,6 @@
-@import './assets/fonts';
+@import './assets/_fonts';
 $fontNoto-Serif:'Noto Serif';
-$fontGilroy:'Gilroy Light';
+$fontGilroy:'Gilroy';
 $colorWhite: #FFFFFF;
 $colorBlack: #343434;
 $colorForHoverBtn:#333333;
@@ -15,7 +15,7 @@ $tablet:768px;
  &::-webkit-input-placeholder { @content; }
 }
 @mixin h3MainStyles{
- font-family: Noto Serif;
+ font-family: $fontNoto-Serif;
  font-style: normal;
  font-weight: bold;
  font-size: 30px;
@@ -61,8 +61,7 @@ $tablet:768px;
  left: 50%;
  transform: translate(-50%, -50%);
  text-align: center;
- font-family: $fontGilroy;
- font-weight: 500;
+ font-family: 'Gilroy Regular', serif;
  color: $colorWhite;
  z-index: 3;
 }
@@ -94,7 +93,7 @@ $tablet:768px;
   }
 }
 @mixin footerItemTitle{
-  font-family: Gilroy;
+  font-family: fontGilroy, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -139,6 +138,7 @@ h1, h2, h3, h4, p, ul, li, a {
 }
 a{
   color: $colorForHoverBtn;
+  font-family: $fontGilroy;
 }
 a:hover{
   color: #417b9b;
@@ -279,7 +279,7 @@ a:hover{
      color: $colorWhite;
      font-size: 15px;
      line-height: 21px;
-     font-family:$fontGilroy;
+    font-family: $fontGilroy;
      letter-spacing: 1px;
      @include for-tablet-landscape-up {
       font-size: 12px;
@@ -350,10 +350,11 @@ a:hover{
     color: $colorWhite;
     border: none;
     cursor: pointer;
+    font-family: $fontGilroy;
     @include for-tablet-portrait-up {
      max-width: 200px;
      height: 29px;
-     font-family:$fontGilroy;
+
      font-style: normal;
      font-weight: normal;
      font-size: 21px;
@@ -602,7 +603,7 @@ a:hover{
    flex-direction: column;
    align-items: center;
      &__refForEvents{
-      font-family: $fontGilroy;
+       font-family: $fontGilroy;
       font-style: normal;
       font-weight: normal;
       font-size: 21px;
@@ -759,7 +760,7 @@ a:hover{
     margin-bottom: 60px;
  }
    &__preview{
-      font-family: fontGilroy;
+     font-family: $fontGilroy;
       font-size: 21px;
       line-height: 29px;
       text-align: center;
@@ -838,7 +839,7 @@ a:hover{
  }
   &__previw{
     margin-bottom: 20px;
-    font-family: $fontGilroy;
+    font-family: fontGilroy, serif;
     font-size: 21px;
     line-height: 29px;
  }
@@ -853,7 +854,7 @@ a:hover{
   &__info {
     max-width: 70%;
     text-align: center;
-    font-family: $fontGilroy;
+    font-family:$fontGilroy;
     font-weight: inherit;
     font-size: 18px;
     line-height: 25px;
@@ -881,7 +882,7 @@ a:hover{
 /*articles-content*/
 .articles-content{
    @include containerFlex();
-   font-family: fontGilroy;
+  font-family: $fontGilroy;
     &__preview{
     margin-bottom: 15px;
     font-size: 21px;
@@ -889,7 +890,7 @@ a:hover{
  }
   &__title{
     @include h3MainStyles;
-    font-family:fontNoto-Serif;
+    font-family: $fontNoto-Serif;
     font-weight: 700;
     font-size: 30px;
     text-align: center;
@@ -932,7 +933,6 @@ a:hover{
        @include titleForCards;
        width: 55%;
        max-height: 87px;
-       font-family: fontGilroy;
        font-size: 21px;
        line-height:29px;
        text-align: center;
@@ -957,7 +957,7 @@ a:hover{
   @include containerFlex();
   color: $colorWhite;
    &__preview{
-     font-family: fontGilroy;
+     font-family: $fontGilroy;
      font-size: 21px;
      line-height: 29px;
      text-align: center;
@@ -1007,7 +1007,7 @@ a:hover{
   }
    &-link{
      color: $colorWhite;
-     font-family: Gilroy;
+     font-family: $fontGilroy;
      font-style: normal;
      font-weight: normal;
      font-size: 18px;
@@ -1028,7 +1028,6 @@ a:hover{
    background-color: $colorWhite;
    outline: 1px solid $colorWhite;
    border: 14px solid $colorBlack;
-   outline: 1px solid $colorWhite;
    margin-left: 15px;
     @include for-tablet-portrait-up{
      max-width: 340px;
@@ -1117,10 +1116,8 @@ a:hover{
       margin-bottom: 15px;
    }
    &-item-link{
-     font-family: fontGilroy;
-     font-style: normal;
-     font-weight: normal;
-     font-size: 14px;
+     font-family: fontGilroy,serif;
+         font-size: 14px;
      line-height: 150%;
      color: $colorForHoverBtn;
         }
@@ -1140,9 +1137,7 @@ a:hover{
     width: 100%;
     max-height: 65px;
     text-align: left;
-    font-family: fontGilroy;
-    font-style: normal;
-    font-weight: normal;
+    font-family: $fontGilroy;
     font-size: 14px;
     line-height: 21px;
     color: $colorForHoverBtn;
@@ -1192,6 +1187,10 @@ a:hover{
    width: 100%;
    text-align: left;
    margin: 25px 0 27px 0;
+    font-family: $fontGilroy;
+    font-size: 14px;
+    line-height: 21px;
+    color: $colorForHoverBtn;
    }
   &__links{
    width: 100%;
@@ -1207,7 +1206,6 @@ a:hover{
      display: flex;
      align-items: center;
      justify-content: space-between;
-     align-items: center;
      margin: 0 auto 15px;
   }
 }
