@@ -1,11 +1,12 @@
 @font-face {
-  font-family: "Gilroy";
+  font-family: "Gilroy Regular";
   src: local("Gilroy Regular"), local("Gilroy-Regular"), url("./fonts/Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("./fonts/Gilroy-Regular.woff2") format("woff2"), url("./fonts/Gilroy-Regular.woff") format("woff"), url("./fonts/Gilroy-Regular.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: "Noto Serif";
+  src: local("Nato Serif");
   src: url("./fonts/Noto Serif.woff") format("woff"), url("./fonts/Noto Serif.svg#Noto Serif") format("svg");
   font-weight: 400;
   font-style: normal;
@@ -38,7 +39,7 @@ h1, h2, h3, h4, p, ul, li, a {
 
 a {
   color: #333333;
-  font-family: "Gilroy";
+  font-family: "Gilroy Regular";
 }
 
 a:hover {
@@ -214,7 +215,7 @@ a:hover {
   color: #FFFFFF;
   font-size: 15px;
   line-height: 21px;
-  font-family: "Gilroy";
+  font-family: "Gilroy Regular";
   letter-spacing: 1px;
 }
 @media (max-width: 980px) {
@@ -290,7 +291,7 @@ a:hover {
   color: #FFFFFF;
   border: none;
   cursor: pointer;
-  font-family: "Gilroy";
+  font-family: "Gilroy Regular";
 }
 @media (max-width: 600px) {
   .header__registration-block .logIn-btn {
@@ -600,7 +601,7 @@ a:hover {
   align-items: center;
 }
 .product-categories__refForEvents {
-  font-family: "Gilroy";
+  font-family: "Gilroy Regular";
   font-style: normal;
   font-weight: normal;
   font-size: 21px;
@@ -654,7 +655,7 @@ a:hover {
   cursor: pointer;
   position: relative;
   background-color: #FFFFFF;
-  font-family: "Gilroy";
+  font-family: "Gilroy Regular";
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
@@ -786,7 +787,7 @@ a:hover {
   }
 }
 .presentation__preview {
-  font-family: "Gilroy";
+  font-family: "Gilroy Regular";
   font-size: 21px;
   line-height: 29px;
   text-align: center;
@@ -906,7 +907,7 @@ a:hover {
 .advice-content__info {
   max-width: 70%;
   text-align: center;
-  font-family: "Gilroy";
+  font-family: "Gilroy Regular";
   font-weight: inherit;
   font-size: 18px;
   line-height: 25px;
@@ -916,7 +917,7 @@ a:hover {
   height: 51px;
   border: 1px solid #333333;
   background-color: #FFFFFF;
-  font-family: "Gilroy";
+  font-family: "Gilroy Regular";
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -937,7 +938,7 @@ a:hover {
   align-items: center;
   flex-direction: column;
   padding-top: 100px;
-  font-family: "Gilroy";
+  font-family: "Gilroy Regular";
 }
 .articles-content__preview {
   margin-bottom: 15px;
@@ -1051,7 +1052,7 @@ a:hover {
   color: #FFFFFF;
 }
 .proposal__preview {
-  font-family: "Gilroy";
+  font-family: "Gilroy Regular";
   font-size: 21px;
   line-height: 29px;
   text-align: center;
@@ -1115,7 +1116,7 @@ a:hover {
 }
 .proposal-categories__item-link {
   color: #FFFFFF;
-  font-family: "Gilroy";
+  font-family: "Gilroy Regular";
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -1351,7 +1352,7 @@ a:hover {
   width: 100%;
   max-height: 65px;
   text-align: left;
-  font-family: "Gilroy";
+  font-family: "Gilroy Regular";
   font-size: 14px;
   line-height: 21px;
   color: #333333;
@@ -1459,7 +1460,7 @@ a:hover {
   width: 100%;
   text-align: left;
   margin: 25px 0 27px 0;
-  font-family: "Gilroy";
+  font-family: "Gilroy Regular";
   font-size: 14px;
   line-height: 21px;
   color: #333333;

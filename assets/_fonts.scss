@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Gilroy';
+  font-family: 'Gilroy Regular';
   src: local('Gilroy Regular'), local('Gilroy-Regular'),
   url('./fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
   url('./fonts/Gilroy-Regular.woff2') format('woff2'),
@@ -10,6 +10,7 @@
 }
 @font-face {
   font-family:'Noto Serif';
+  src: local('Nato Serif');
   src:url('./fonts/Noto Serif.woff') format('woff'),
   url('./fonts/Noto Serif.svg#Noto Serif') format('svg');
   font-weight: 400;
