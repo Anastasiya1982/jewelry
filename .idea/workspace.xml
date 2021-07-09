@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="39ce5454-3460-4659-b4a3-af1651b6ca74" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/_fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/_fonts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Gilroy-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fonts/Gilroy-Regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style.scss" afterDir="false" />
-    </list>
+    <list default="true" id="39ce5454-3460-4659-b4a3-af1651b6ca74" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,7 +66,7 @@
       <workItem from="1625770284853" duration="128000" />
       <workItem from="1625770414516" duration="4809000" />
       <workItem from="1625809431902" duration="8537000" />
-      <workItem from="1625829434570" duration="639000" />
+      <workItem from="1625829434570" duration="923000" />
     </task>
     <servers />
   </component>

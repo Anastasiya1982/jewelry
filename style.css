@@ -1015,7 +1015,7 @@ a:hover {
 }
 @media (max-width: 485px) {
   .articles-content .articles__item .item-title {
-    font-size: 17px;
+    font-size: 14px;
   }
 }
 .articles-content__read-blog {
